@@ -1,4 +1,5 @@
 <?php
+require_once 'includes/acf-blocks.php';
 
 /**
  * Theme setup.
