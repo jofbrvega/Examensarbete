@@ -14,11 +14,9 @@
 <?php do_action( 'tailpress_site_before' ); ?>
 
 <div id="page" class="flex flex-col min-h-screen">
+	<?php get_template_part('template-parts/global/global', 'header'); ?>
 
-	<header>
-		<h1>HELLO</h1>
-	</header>
+	<div id="content" class="flex-grow site-content">
 
 		<?php do_action( 'tailpress_content_start' ); ?>
-
 		<main>
