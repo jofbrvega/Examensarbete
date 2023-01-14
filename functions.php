@@ -1,6 +1,7 @@
 <?php
 require_once 'includes/acf.php';
 require_once 'includes/acf-blocks.php';
+require_once 'includes/theme-functions.php';
 
 /**
  * Theme setup.
@@ -45,6 +46,8 @@ function tailpress_enqueue_scripts() {
 
 	wp_enqueue_style( 'tailpress', tailpress_asset( 'css/app.css' ), array(), $theme->get( 'Version' ) );
 	wp_enqueue_script( 'tailpress', tailpress_asset( 'js/app.js' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_script('splide-js', get_stylesheet_directory_uri() . '/assets/js/splide.min.js', array(), true);
+	wp_enqueue_style('splide-css', get_template_directory_uri() . '/assets/css/splide.min.css', array(), '1.0.0',);
 }
 
 add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );
@@ -109,3 +112,16 @@ function tailpress_nav_menu_add_submenu_class( $classes, $args, $depth ) {
 }
 
 add_filter( 'nav_menu_submenu_css_class', 'tailpress_nav_menu_add_submenu_class', 10, 3 );
+
+// Adding a new (custom) block category and show that category at the top
+add_filter('block_categories_all', 'example_block_category', 10, 2);
+function example_block_category($categories, $post)
+{
+
+	array_unshift($categories, array(
+		'slug'	=> 'blocks',
+		'title' => 'Boiler Blocks'
+	));
+
+	return $categories;
+}

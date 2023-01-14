@@ -11,8 +11,10 @@
  */
 ?>
 
-<header class="border-2">
-    <div class="flex justify-end p-4">
-        <img class="h-10" src="<?= esc_url(get_template_directory_uri()); ?>/assets/images/icons8-menu-rounded-50.png" alt="">
+<header>
+    <div class="flex justify-end">
+        <div>
+            <img class="h-10" src="<?= esc_url(get_template_directory_uri()); ?>/assets/images/icon-hamburger-menu.png" alt="hamburger-menu">
+        </div>    
     </div>
 </header>
