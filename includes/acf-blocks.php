@@ -3,6 +3,34 @@ add_action('acf/init', 'my_acf_blocks_init');
 function my_acf_blocks_init() {
     // Check function exists.
     if( function_exists('acf_register_block_type') ) {
+        // Form
+        acf_register_block_type(
+            array(
+                'name'              => 'form',
+                'title'             => __('Form'),
+                'description'       => __('Form - block'),
+                'render_template'   => 'template-parts/blocks/form/form.php',
+                'render_callback' => 'block_render',
+                'category'          => 'blocks',
+                'icon'              => 'admin-comments',
+                'mode'               => 'edit',
+                'keywords'          => array('form'),
+            )
+        );
+        // Gallery
+        acf_register_block_type(
+            array(
+                'name'              => 'gallery',
+                'title'             => __('Gallery'),
+                'description'       => __('Gallery - block'),
+                'render_template'   => 'template-parts/blocks/gallery.php',
+                'render_callback' => 'block_render',
+                'category'          => 'blocks',
+                'icon'              => 'admin-comments',
+                'mode'               => 'edit',
+                'keywords'          => array('gallery'),
+            )
+        );
         // Hero
         acf_register_block_type(array(
             'name'              => 'hero',
@@ -34,30 +62,13 @@ function my_acf_blocks_init() {
             array(
                 'name'              => 'hero-50',
                 'title'             => __('Hero-50/50'),
-                'description'       => __('Hero 50/50 - sliderblock'),
+                'description'       => __('Hero 50/50 - block'),
                 'render_template'   => 'template-parts/blocks/hero/hero-50.php',
                 'render_callback' => 'block_render',
                 'category'          => 'blocks',
                 'icon'              => 'admin-comments',
                 'mode'               => 'edit',
                 'keywords'          => array('hero-50/50'),
-            )
-        );
-
-        
-
-        // Gallery
-        acf_register_block_type(
-            array(
-                'name'              => 'gallery',
-                'title'             => __('Gallery'),
-                'description'       => __('Gallery - block'),
-                'render_template'   => 'template-parts/blocks/gallery.php',
-                'render_callback' => 'block_render',
-                'category'          => 'blocks',
-                'icon'              => 'admin-comments',
-                'mode'               => 'edit',
-                'keywords'          => array('gallery'),
             )
         );
 
@@ -73,6 +84,20 @@ function my_acf_blocks_init() {
                 'icon'              => 'admin-comments',
                 'mode'               => 'edit',
                 'keywords'          => array('two-column'),
+            )
+        );
+        // Maps
+        acf_register_block_type(
+            array(
+                'name'              => 'maps',
+                'title'             => __('Maps'),
+                'description'       => __('Maps - block'),
+                'render_template'   => 'template-parts/blocks/maps.php',
+                'render_callback' => 'block_render',
+                'category'          => 'blocks',
+                'icon'              => 'admin-comments',
+                'mode'               => 'edit',
+                'keywords'          => array('maps'),
             )
         );
 
