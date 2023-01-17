@@ -29,7 +29,22 @@ function my_acf_blocks_init() {
                     'mode'               => 'edit',
                     'keywords'          => array('hero-slider'),
                 )
-            );
+            );// Hero-50/50
+        acf_register_block_type(
+            array(
+                'name'              => 'hero-50',
+                'title'             => __('Hero-50/50'),
+                'description'       => __('Hero 50/50 - sliderblock'),
+                'render_template'   => 'template-parts/blocks/hero/hero-50.php',
+                'render_callback' => 'block_render',
+                'category'          => 'blocks',
+                'icon'              => 'admin-comments',
+                'mode'               => 'edit',
+                'keywords'          => array('hero-50/50'),
+            )
+        );
+
+        
 
         // Gallery
         acf_register_block_type(

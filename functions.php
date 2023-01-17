@@ -48,6 +48,7 @@ function tailpress_enqueue_scripts() {
 	wp_enqueue_script( 'tailpress', tailpress_asset( 'js/app.js' ), array(), $theme->get( 'Version' ) );
 	wp_enqueue_script('splide-js', get_stylesheet_directory_uri() . '/assets/js/splide.min.js', array(), true);
 	wp_enqueue_style('splide-css', get_template_directory_uri() . '/assets/css/splide.min.css', array(), '1.0.0',);
+	wp_enqueue_script('alpinejs', 'https://cdn.jsdelivr.net/npm/alpinejs@3.9.1/dist/cdn.min.js', array(), '1.0.0', false);
 }
 
 add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );
