@@ -4,16 +4,20 @@ $hero_slider = get_field('hero_slider');
 
 <section class="w-full">
     <div class="splide">
-        <div class="splide-track">
+        <div class="splide__track ">
             <ul class="splide__list">
                 <?php
                 if (have_rows('hero_slider')) :
                     while (have_rows('hero_slider')) : the_row();
                         $hero_slider_image = get_sub_field('hero_slider_image');
                 ?>
-                        <li class="splide__slide">
-                            <img src="<?php echo $hero_slider_image['url']; ?>" alt="<?php echo $hero_slider_image['alt']; ?>" 
-                            class="w-full h-[60vh] md:h-[80vh] object-cover">
+                        <li class="flex justify-center splide__slide">
+                            <img src="<?php echo $hero_slider_image['url']; ?>" alt="<?php echo $hero_slider_image['alt']; ?>" class="object-cover h-[70vh]">
+                            <div class="absolute top-10 right-10">
+                                <a data-fslightbox href="<?php echo $hero_slider_image['url']; ?>" alt="<?php echo $hero_slider_image['alt']; ?>" class="text-white w-fit">
+                                    <i class="text-4xl fa-light fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
                         </li>
                 <?php
                     endwhile;
