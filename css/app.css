@@ -562,6 +562,10 @@ video {
   right: 2.5rem;
 }
 
+.order-1 {
+  order: 1;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -785,6 +789,11 @@ video {
 .\!px-6 {
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pl-3 {

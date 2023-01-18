@@ -17,18 +17,32 @@ function my_acf_blocks_init() {
                 'keywords'          => array('form'),
             )
         );
-        // Gallery
+        // Image gallery block
         acf_register_block_type(
             array(
-                'name'              => 'image',
-                'title'             => __('Image'),
-                'description'       => __('Image - block'),
+                'name'              => 'image-gallery-slider',
+                'title'             => __('Image/Slider'),
+                'description'       => __('Image/Slider - block'),
                 'render_template'   => 'template-parts/blocks/image/image-gallery.php',
                 'render_callback' => 'block_render',
                 'category'          => 'blocks',
                 'icon'              => 'admin-comments',
                 'mode'               => 'edit',
-                'keywords'          => array('image'),
+                'keywords'          => array('image/slider'),
+            )
+        );
+        // Image/text block
+        acf_register_block_type(
+            array(
+                'name'              => 'image-text',
+                'title'             => __('Image/Text'),
+                'description'       => __('Image/Text - block'),
+                'render_template'   => 'template-parts/blocks/image/image-text.php',
+                'render_callback' => 'block_render',
+                'category'          => 'blocks',
+                'icon'              => 'admin-comments',
+                'mode'               => 'edit',
+                'keywords'          => array('image-text'),
             )
         );
         // Hero
