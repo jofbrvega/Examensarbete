@@ -20,15 +20,15 @@ function my_acf_blocks_init() {
         // Gallery
         acf_register_block_type(
             array(
-                'name'              => 'gallery',
-                'title'             => __('Gallery'),
-                'description'       => __('Gallery - block'),
-                'render_template'   => 'template-parts/blocks/gallery.php',
+                'name'              => 'image',
+                'title'             => __('Image'),
+                'description'       => __('Image - block'),
+                'render_template'   => 'template-parts/blocks/image/image-gallery.php',
                 'render_callback' => 'block_render',
                 'category'          => 'blocks',
                 'icon'              => 'admin-comments',
                 'mode'               => 'edit',
-                'keywords'          => array('gallery'),
+                'keywords'          => array('image'),
             )
         );
         // Hero
