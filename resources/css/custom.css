@@ -43,6 +43,42 @@ article > *:not(.entry-content),
 
  /* CF7 */
  /* FORMS */
-.wpcf7-form input {
-    @apply !border-2;
-}
+  .wpcf7-form p {
+      @apply mt-2;
+  }
+
+  .wpcf7-form label {
+      @apply p-4 text-lg;
+  }
+
+  .wpcf7-text {
+      @apply w-full h-12 pl-3 mt-2 text-black border-2 rounded-full;
+  }
+
+  .wpcf7-textarea {
+      @apply w-full pt-2 pl-3 mt-2 text-black border-2 rounded-full h-44;
+  }
+
+  ::placeholder {
+      @apply text-base;
+  }
+
+  .wpcf7-spinner {
+      @apply hidden;
+  }
+
+  .wpcf7-response-output {
+      @apply !border-none bg-pink-300 text-black !py-4 !px-6 rounded-md;
+  }
+
+  .wpcf7-not-valid-tip {
+      @apply mt-2 mb-4 text-sm;
+  }
+
+  .wpcf7-submit {
+    @apply p-2 border-2 rounded-full;
+  }
+
+  .wpcf7 span {
+    @apply p-2;
+  }
