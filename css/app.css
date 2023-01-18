@@ -932,6 +932,10 @@ article > *:not(.entry-content),
 
 /* FORMS */
 
+.wpcf7-form input {
+  border-width: 2px !important;
+}
+
 @media (prefers-color-scheme: dark) {
   .dark\:bg-gray-900 {
     --tw-bg-opacity: 1;
