@@ -1,11 +1,11 @@
 * {
-    @apply font-serif;
+    @apply font-thin;
 }
 
 h1,
 h2,
 h3 {
-    @apply font-bold;
+    @apply text-purple-300 font-extralight;
 }
 
 h1 {
@@ -25,6 +25,5 @@ h4 {
 }
 
 h5 {
-    @apply text-l;
+    @apply text-lg;
 }
-
