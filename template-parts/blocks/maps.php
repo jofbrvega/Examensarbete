@@ -19,6 +19,7 @@ $maps_lon = get_field('maps_lon');
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
 
+        // Layer Toner from "Stamen"
         var StamenTonerLite = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.{ext}', {
             attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             subdomains: 'abcd',
@@ -33,6 +34,7 @@ $maps_lon = get_field('maps_lon');
         }
         L.control.layers(baseMaps).addTo(map);
 
+        // Marker
         var marker = L.marker([<?= $maps_lat ?>, <?= $maps_lon; ?>]).addTo(map);
     </script>
 <?php endif; ?>

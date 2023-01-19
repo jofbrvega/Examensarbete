@@ -1,6 +1,13 @@
+<?php
+$global_logotype = get_field('global_logotype', 'options');
+?>
+
 <header>
     <div x-data="{isOpen: false}" class="">
-        <div class="flex justify-end">
+        <div class="flex <?= ($global_logotype) ? 'justify-between' : 'justify-end';?> ">
+            <?php if ($global_logotype) : ?>
+                <img class="object-cover h-10" src="<?= esc_url($global_logotype['url']); ?>" alt="<?= esc_url($global_logotype['alt']); ?>">
+            <?php endif; ?>
             <button type="button" aria-label="toggle-menu" @click="isOpen = !isOpen">
                 <img class="h-10" src="<?= esc_url(get_template_directory_uri()); ?>/assets/images/icon-hamburger-menu.png" alt="hamburger-menu">
             </button>
@@ -16,15 +23,15 @@
                         $header_menu_top_links_target = $header_menu_top_links['target'] ? $header_menu_top_links['target'] : '_self';
                     endif;
             ?>
-                        <div class="p-4">
-                            <a href=" <?= esc_url($header_menu_top_links_url); ?>" target="<?= esc_attr($header_menu_top_links_target); ?>" class="w-full mt-2 font-bold normal-case truncate text-l underline-offset-0 desktop-links">
-                                <?= esc_html($header_menu_top_links_title); ?>
-                            </a>
-                        </div>
-                <?php
+                    <div class="p-4">
+                        <a href=" <?= esc_url($header_menu_top_links_url); ?>" target="<?= esc_attr($header_menu_top_links_target); ?>" class="w-full mt-2 font-bold normal-case truncate text-l underline-offset-0 desktop-links">
+                            <?= esc_html($header_menu_top_links_title); ?>
+                        </a>
+                    </div>
+            <?php
                 endwhile;
             endif;
-                ?>
+            ?>
         </div>
     </div>
 </header>
