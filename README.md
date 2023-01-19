@@ -2,7 +2,7 @@
 
 Components library for Boilerplate. Requirements for using the components are Tailwind and Advanced Custom Fields. 
 
-##Content Sections
+## Content Sections
 * [Navbar](./template-parts/global/global-header.php)
 * [Hero](./template-parts/blocks/hero)
 * [Form](./template-parts/blocks/form/form.php)
@@ -15,4 +15,9 @@ Components library for Boilerplate. Requirements for using the components are Ta
 
 ## Scripts 
 **npm run watch-sync**
+Watch and sync for file changes
+
+## Instructions for Boilerplate
+### Form
+To change style and CSS - use [custom.css](./resources/css/custom.css) and modify it to your own.
 
