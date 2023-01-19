@@ -3,8 +3,8 @@
 Components library for Boilerplate. Requirements for using the components are Tailwind and Advanced Custom Fields. 
 
 ##Content Sections
-* [Navbar](./)
-* [Hero](./)
+* [Navbar](./template-parts/global/global-header.php)
+* [Hero](./template-parts/blocks/hero)
 * [Form](./)
 * [Image-block(50/50)](./)
 * [Image/Text-block](./)
@@ -13,4 +13,7 @@ Components library for Boilerplate. Requirements for using the components are Ta
 * [Footer](./)
 
 <!-- [I'm a relative reference to a repository file](../blob/master/LICENSE) -->
-# examen
+
+## Scripts 
+**npm run watch-sync**
+
