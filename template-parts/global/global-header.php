@@ -6,10 +6,10 @@ $global_logotype = get_field('global_logotype', 'options');
     <div x-data="{isOpen: false}">
         <div class="flex <?= ($global_logotype) ? 'justify-between' : 'justify-end'; ?> ">
             <?php if ($global_logotype) : ?>
-                <img class="object-cover h-24" src="<?= esc_url($global_logotype['url']); ?>" alt="<?= esc_url($global_logotype['alt']); ?>">
+                <img class="object-cover h-16" src="<?= esc_url($global_logotype['url']); ?>" alt="<?= esc_url($global_logotype['alt']); ?>">
             <?php endif; ?>
             <button type="button" aria-label="toggle-menu" @click="isOpen = !isOpen">
-                <img class="h-24" src="<?= esc_url(get_template_directory_uri()); ?>/assets/images/icon-hamburger-menu.png" alt="hamburger-menu">
+                <img class="h-16" src="<?= esc_url(get_template_directory_uri()); ?>/assets/images/icon-hamburger-menu.png" alt="hamburger-menu">
             </button>
         </div>
         <div x-show="isOpen" x-transition x-transition:enter.duration.500ms x-transition:leave.duration.500ms class="flex flex-col justify-center h-[50vh] p-32 text-center">

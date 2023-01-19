@@ -105,12 +105,12 @@
   height: 100vh
 }
 
-.h-\[180px\] {
-  height: 180px
+.h-\[700px\] {
+  height: 700px
 }
 
-.h-10 {
-  height: 2.5rem
+.h-16 {
+  height: 4rem
 }
 
 .h-\[50vh\] {
@@ -121,32 +121,12 @@
   height: 70vh
 }
 
+.h-10 {
+  height: 2.5rem
+}
+
 .h-12 {
   height: 3rem
-}
-
-.h-\[300px\] {
-  height: 300px
-}
-
-.h-\[400px\] {
-  height: 400px
-}
-
-.h-\[700px\] {
-  height: 700px
-}
-
-.h-16 {
-  height: 4rem
-}
-
-.h-20 {
-  height: 5rem
-}
-
-.h-24 {
-  height: 6rem
 }
 
 .min-h-screen {
@@ -166,8 +146,8 @@
   width: fit-content
 }
 
-.max-w-screen-xl {
-  max-width: 1280px
+.max-w-screen-2xl {
+  max-width: 1536px
 }
 
 .flex-grow {
@@ -190,10 +170,6 @@
   align-items: center
 }
 
-.justify-start {
-  justify-content: flex-start
-}
-
 .justify-end {
   justify-content: flex-end
 }
@@ -212,12 +188,12 @@
   white-space: nowrap
 }
 
-.rounded-full {
-  border-radius: 9999px
-}
-
 .rounded-md {
   border-radius: 0.375rem
+}
+
+.rounded-full {
+  border-radius: 9999px
 }
 
 .border-2 {
@@ -286,9 +262,9 @@
   padding-bottom: 3rem
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem
 }
 
 .px-4 {
@@ -301,11 +277,6 @@
   padding-bottom: 8rem
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem
-}
-
 .\!py-4 {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important
@@ -314,6 +285,16 @@
 .\!px-6 {
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem
 }
 
 .pl-3 {
@@ -382,11 +363,6 @@
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity))
-}
-
-.text-purple-300 {
-  --tw-text-opacity: 1;
-  color: rgb(216 180 254 / var(--tw-text-opacity))
 }
 
 .underline {

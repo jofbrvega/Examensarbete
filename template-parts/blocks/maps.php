@@ -4,7 +4,7 @@ $maps_lat = get_field('maps_lat');
 $maps_lon = get_field('maps_lon');
 ?>
 
-<section class="w-full">
+<section class="mx-auto max-w-screen-2xl">
     <?php if ($maps_heading) : ?>
         <h1 class="p-4 text-center"> <?= $maps_heading; ?></h1>
     <?php endif; ?>

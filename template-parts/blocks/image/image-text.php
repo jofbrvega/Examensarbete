@@ -5,7 +5,7 @@ $image_text_heading = get_field('image_text_heading');
 $image_text_text = get_field('image_text_text');
 ?>
 
-<section class="mx-auto">
+<section class="py-4 mx-auto max-w-screen-2xl">
     <div class="grid grid-cols-2">
         <div class="flex justify-center <?= ($image_text_layout == 'textleft') ? 'order-1' : 'order-0'; ?>">
             <img src="<?php echo $image_text_image['url']; ?>" alt="<?php echo $image_text_image['alt']; ?>">

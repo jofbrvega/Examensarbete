@@ -3,9 +3,9 @@
 
  /* CF7 */
  /* FORMS */
-  .wpcf7-form p {
-      @apply mt-2;
-  }
+   .wpcf7 p {
+       @apply mt-8;
+   }
 
   .wpcf7-form label {
       @apply p-4 text-lg;

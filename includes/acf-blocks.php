@@ -114,6 +114,20 @@ function my_acf_blocks_init() {
                 'keywords'          => array('maps'),
             )
         );
+        // Employees
+        acf_register_block_type(
+            array(
+                'name'              => 'employees',
+                'title'             => __('Employees'),
+                'description'       => __('Employees - block'),
+                'render_template'   => 'template-parts/blocks/employees.php',
+                'render_callback' => 'block_render',
+                'category'          => 'blocks',
+                'icon'              => 'admin-comments',
+                'mode'               => 'edit',
+                'keywords'          => array('employees'),
+            )
+        );
 
         
 

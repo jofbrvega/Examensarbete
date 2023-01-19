@@ -2,7 +2,7 @@
 $hero_slider = get_field('hero_slider');
 ?>
 
-<section class="w-full">
+<section class="py-4 max-w-screen-2xl">
     <div class="splide">
         <div class="splide__track ">
             <ul class="splide__list">

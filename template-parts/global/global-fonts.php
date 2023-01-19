@@ -28,9 +28,6 @@ if ($font_family == "wtmg") : ?>
         h6 {
             font-size: large;
         }
-        p {
-            line-height: 1.5em;
-        }
     </style>
 <?php endif;
 ?>

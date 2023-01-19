@@ -7,6 +7,9 @@
 <?php do_action('tailpress_content_after'); ?>
 
 <footer id="colophon" class="py-12 site-footer bg-gray-50" role="contentinfo">
+
+
+
 	<?php do_action('tailpress_footer'); ?>
 
 	<div class="container mx-auto text-center text-gray-500">
