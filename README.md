@@ -15,9 +15,13 @@ Components library for Boilerplate. Requirements for using the components are Ta
 
 ## Scripts 
 **npm run watch-sync**
+
 Watch and sync for file changes
 
 ## Instructions for Boilerplate
+### Header
+To change style and CSS - use [global-header](./template-parts/global/global-header.php) and modify it to your own.
 ### Form
 To change style and CSS - use [custom.css](./resources/css/custom.css) and modify it to your own.
-
+### Hero, Image, Maps 
+These blocks are pre-made, you may add your own in [hero-directory](./template-parts/blocks/hero/) or choose between these blocks in Wordpress page. 
