@@ -6,7 +6,6 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="/template-parts/global/global-fonts.php">
 </head>
 
 <body <?php body_class( 'bg-white text-gray-900 antialiased' ); ?>>
@@ -15,7 +14,7 @@
 
 <div id="page" class="flex flex-col min-h-screen">
 	<?php get_template_part('template-parts/global/global', 'header'); ?>
-	<!-- <?php get_template_part('template-parts/global/global', 'fonts'); ?> -->
+	<?php get_template_part('template-parts/global/global', 'fonts'); ?>
 
 	<div id="content" class="flex-grow site-content">
 

@@ -13,7 +13,7 @@ $hero_text = get_field('hero_text');
     </section>
 
 <?php else : ?>
-    <section class="border-2">
+    <section class="">
         <div class="flex flex-row justify-center px-4 py-32 lg:h-screen">
             <div class="text-center">
                 <img class="object-cover" src="<?= esc_url(get_template_directory_uri()); ?>/assets/images/placeholder.png" alt="placeholder">

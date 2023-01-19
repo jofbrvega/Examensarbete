@@ -617,8 +617,8 @@ video {
   height: 100vh;
 }
 
-.h-\[180px\] {
-  height: 180px;
+.h-\[700px\] {
+  height: 700px;
 }
 
 .h-10 {
@@ -637,16 +637,16 @@ video {
   height: 3rem;
 }
 
-.h-\[300px\] {
-  height: 300px;
+.h-16 {
+  height: 4rem;
 }
 
-.h-\[400px\] {
-  height: 400px;
+.h-20 {
+  height: 5rem;
 }
 
-.h-\[700px\] {
-  height: 700px;
+.h-24 {
+  height: 6rem;
 }
 
 .min-h-screen {
@@ -690,10 +690,6 @@ video {
   align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
-}
-
 .justify-end {
   justify-content: flex-end;
 }
@@ -712,12 +708,12 @@ video {
   white-space: nowrap;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border-2 {
@@ -879,6 +875,11 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.text-purple-300 {
+  --tw-text-opacity: 1;
+  color: rgb(216 180 254 / var(--tw-text-opacity));
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -958,42 +959,6 @@ video {
 .wp-caption-text {
   font-size: 0.875rem;
   color: #4b5563;
-}
-
-* {
-  font-weight: 100;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: 200;
-  --tw-text-opacity: 1;
-  color: rgb(216 180 254 / var(--tw-text-opacity));
-}
-
-h1 {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-h2 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-h4 {
-  font-size: 1.25rem;
-}
-
-h5 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 /* CF7 */
