@@ -9,6 +9,5 @@
     endwhile; ?>
 <?php endif; ?>
 
-<div class="border-b-4 border-<?= $navigation_border_color; ?>"> </div>
 <?php
 get_footer();

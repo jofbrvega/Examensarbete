@@ -2,7 +2,7 @@
 $hero_slider = get_field('hero_slider');
 ?>
 
-<section class="py-4 max-w-screen-2xl">
+<section class="w-full py-4">
     <div class="splide">
         <div class="splide__track ">
             <ul class="splide__list">
@@ -12,7 +12,7 @@ $hero_slider = get_field('hero_slider');
                         $hero_slider_image = get_sub_field('hero_slider_image');
                 ?>
                         <li class="flex justify-center splide__slide">
-                            <img src="<?php echo $hero_slider_image['url']; ?>" alt="<?php echo $hero_slider_image['alt']; ?>" class="object-cover h-[70vh]">
+                            <img class="object-cover h-[70vh] loading=lazy" src="<?php echo $hero_slider_image['url']; ?>" alt="<?php echo $hero_slider_image['alt']; ?>" >
                             <div class="absolute top-10 right-10">
                                 <a data-fslightbox href="<?php echo $hero_slider_image['url']; ?>" alt="<?php echo $hero_slider_image['alt']; ?>" class="text-white w-fit">
                                     <i class="text-4xl fa-light fa-arrow-up-right-from-square"></i>

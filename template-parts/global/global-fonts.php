@@ -5,6 +5,9 @@ $font_family = get_field('font_family', 'options');
 <?php
 if ($font_family == "wtmg") : ?>
     <style>
+        * {
+            font-family:'Courier New', Courier, monospace;
+        }
         h1 {
             font-weight: bold;
             font-size: xx-large;
@@ -12,11 +15,9 @@ if ($font_family == "wtmg") : ?>
         h2 {
             font-weight: bold;
             font-size: x-large;
-            ;
         }
         h3 {
             font-size: larger;
-            ;
         }
         h4 {
             font-size: large;

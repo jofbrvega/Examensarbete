@@ -7,5 +7,5 @@ $employees_email = get_field('employees_email');
 ?>
 
 <section class="grid grid-span-2">
-    <div> </div>
+    <div></div>
 </section>
