@@ -1,6 +1,7 @@
 <?php
 require_once 'includes/acf.php';
 require_once 'includes/acf-blocks.php';
+require_once 'includes/custom-post-types.php';
 require_once 'includes/theme-functions.php';
 
 /**

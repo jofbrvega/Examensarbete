@@ -128,8 +128,19 @@ function my_acf_blocks_init() {
                 'keywords'          => array('employees'),
             )
         );
-
-        
-
+        // Premises
+        acf_register_block_type(
+            array(
+                'name'              => 'premises',
+                'title'             => __('Premises'),
+                'description'       => __('Premises - block'),
+                'render_template'   => 'template-parts/blocks/premises.php',
+                'render_callback' => 'block_render',
+                'category'          => 'blocks',
+                'icon'              => 'text',
+                'mode'               => 'edit',
+                'keywords'          => array('premises'),
+            )
+        );
     }
 };

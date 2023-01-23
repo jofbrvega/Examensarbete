@@ -79,6 +79,11 @@
   margin-right: 5rem
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem
+}
+
 .mb-3 {
   margin-bottom: 0.75rem
 }
@@ -99,8 +104,20 @@
   margin-bottom: 0px
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem
+}
+
 .block {
   display: block
+}
+
+.inline-block {
+  display: inline-block
 }
 
 .flex {
@@ -160,6 +177,14 @@
   width: fit-content
 }
 
+.w-1\/3 {
+  width: 33.333333%
+}
+
+.w-1\/2 {
+  width: 50%
+}
+
 .max-w-screen-2xl {
   max-width: 1536px
 }
@@ -204,6 +229,14 @@
   justify-content: space-between
 }
 
+.justify-evenly {
+  justify-content: space-evenly
+}
+
+.gap-4 {
+  gap: 1rem
+}
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -220,6 +253,10 @@
 
 .border-2 {
   border-width: 2px
+}
+
+.border {
+  border-width: 1px
 }
 
 .border-b-4 {
@@ -328,6 +365,11 @@
   padding-bottom: 0.5rem
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem
+}
+
 .pl-3 {
   padding-left: 0.75rem
 }
@@ -358,6 +400,20 @@
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem
+}
+
+.text-xl {
+  font-size: 1.25rem
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem
 }
 
 .font-bold {
@@ -507,6 +563,11 @@ body {
 }
 
 @media (min-width: 768px) {
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto
+  }
+
   .md\:text-\[8rem\] {
     font-size: 8rem
   }
@@ -517,6 +578,11 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px
+  }
+
   .lg\:h-screen {
     height: 100vh
   }
