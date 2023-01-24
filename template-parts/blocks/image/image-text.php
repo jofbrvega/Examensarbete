@@ -5,7 +5,7 @@ $image_text_heading = get_field('image_text_heading');
 $image_text_text = get_field('image_text_text');
 ?>
 
-<section class="w-full max-w-screen-xl px-4 py-4 mx-auto border-b-2 lg:py-10">
+<section class="w-full max-w-screen-xl px-4 py-4 mx-auto border-b border-gray-500 lg:py-10">
     <div class="grid grid-span-2 lg:grid-cols-2 lg:gap-10">
         <div class="flex justify-center <?= ($image_text_layout == 'textleft') ? 'order-1' : 'order-0'; ?>">
             <img class="loading=lazy" src="<?php echo $image_text_image['url']; ?>" alt="<?php echo $image_text_image['alt']; ?>">

@@ -5,7 +5,7 @@ $hero_text = get_field('hero_text');
 ?>
 
 <?php if ($hero_image) : ?>
-    <section class="border-2 border-none w-full max-w-screen-2xl py-4 lg:py-10 px-4  h-[70vh] bg-center bg-cover flex flex-col" style="background-image: url('<?php echo $hero_image['url']; ?>');">
+    <section class="border-b border-gray-500 border-none w-full max-w-screen-2xl py-4 lg:py-10 px-4  h-[70vh] bg-center bg-cover flex flex-col" style="background-image: url('<?php echo $hero_image['url']; ?>');">
         <div>
             <h1 class="text-6xl"><?php echo esc_attr($hero_heading); ?></h1>
             <h3><?php echo esc_attr($hero_text); ?></h3>
