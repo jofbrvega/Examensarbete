@@ -2,7 +2,7 @@
 $hero_slider = get_field('image_gallery');
 ?>
 
-<section class="max-w-screen-2xl">
+<section class="border-b-2 max-w-screen-2xl">
     <div class="splide">
         <div class="splide__track ">
             <ul class="splide__list">

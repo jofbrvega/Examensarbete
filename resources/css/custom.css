@@ -1,8 +1,8 @@
  /* CF7 */
  /* FORMS */
-  .wpcf7-form label {
-      @apply p-4 text-lg;
-  }
+ .wpcf7-form p {
+    @apply mt-8;
+ }
 
   .wpcf7-text {
       @apply w-full h-12 pl-3 mt-2 text-black border-2;
@@ -21,11 +21,11 @@
   }
 
   .wpcf7-response-output {
-      @apply !border-none bg-pink-300 text-black !py-4 !px-6;
+      @apply !border-2 !border-black !mt-16 !p-4;
   }
 
   .wpcf7-not-valid-tip {
-      @apply mt-2 mb-4 text-sm;
+      @apply !text-sm;
   }
 
   .wpcf7-submit {
@@ -37,5 +37,6 @@
   }
 
   .wpcf7-list-item-label {
-    @apply text-sm;
+    @apply text-base lg:text-lg ;
   }
+

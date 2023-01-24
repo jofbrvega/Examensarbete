@@ -6,7 +6,7 @@ $font_family = get_field('font_family', 'options');
 if ($font_family == "wtmg") : ?>
     <style>
         * {
-            font-family:'Courier New', Courier, monospace;
+            font-family: Arial, Helvetica, sans-serif;
         }
         h1 {
             font-weight: bold;
