@@ -4,7 +4,7 @@ $maps_lat = get_field('maps_lat');
 $maps_lon = get_field('maps_lon');
 ?>
 
-<section class="mx-auto max-w-screen-2xl">
+<section class="w-full">
     <?php if ($maps_heading) : ?>
         <h1 class="p-4 text-center"> <?= $maps_heading; ?></h1>
     <?php endif; ?>
@@ -13,7 +13,7 @@ $maps_lon = get_field('maps_lon');
 
 <?php if ($maps_lat && $maps_lon) : ?>
     <script>
-        let map = L.map('map').setView([<?= $maps_lat; ?>, <?= $maps_lon; ?>], 14);
+        let map = L.map('map', {scrollWheelZoom: false}).setView([<?= $maps_lat; ?>, <?= $maps_lon; ?>], 14, );
         let osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -27,7 +27,6 @@ $maps_lon = get_field('maps_lon');
             maxZoom: 20,
             ext: 'png'
         });
-
         //Leaflet layer control
         var baseMaps = {
             'Toner': StamenTonerLite
