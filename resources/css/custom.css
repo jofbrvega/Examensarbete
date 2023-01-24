@@ -29,7 +29,7 @@
   }
 
   .wpcf7-submit {
-    @apply float-right p-2 border-2;
+    @apply float-right p-2 mt-2 border-2;
   }
 
   .wpcf7-list-item {
@@ -37,6 +37,6 @@
   }
 
   .wpcf7-list-item-label {
-    @apply text-base lg:text-lg ;
+    @apply text-lg lg:m-2 lg:text-lg;
   }
 

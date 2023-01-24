@@ -32,3 +32,4 @@ These blocks are pre-made, you may add your own in [hero-directory](./template-p
 Obligated moments that are added in this project
 - Lazyloading images, that are written in image-tag.
 - Leaflet, API map. 
+- 

@@ -2,7 +2,7 @@
 $hero_slider = get_field('hero_slider');
 ?>
 
-<section class="h-auto py-4 border-2 border-none lg:py-10">
+<section class="h-auto py-4 border-2 lg:py-10">
     <div class="splide">
         <div class="splide__track ">
             <ul class="splide__list">

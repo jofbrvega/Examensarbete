@@ -204,16 +204,16 @@
   border-width: 2px !important
 }
 
+.border-b-2 {
+  border-bottom-width: 2px
+}
+
 .border-t {
   border-top-width: 1px
 }
 
 .border-l {
   border-left-width: 1px
-}
-
-.border-b-2 {
-  border-bottom-width: 2px
 }
 
 .border-none {
@@ -223,6 +223,11 @@
 .\!border-black {
   --tw-border-opacity: 1 !important;
   border-color: rgb(0 0 0 / var(--tw-border-opacity)) !important
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity))
 }
 
 .bg-\[\#141316\] {
@@ -235,9 +240,29 @@
   background-color: rgb(249 250 251 / var(--tw-bg-opacity))
 }
 
+.bg-stone-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 211 209 / var(--tw-bg-opacity))
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+.bg-stone-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(87 83 78 / var(--tw-bg-opacity))
+}
+
+.bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity))
+}
+
+.bg-stone-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 25 23 / var(--tw-bg-opacity))
 }
 
 .bg-cover {
@@ -279,14 +304,14 @@
   padding-right: 1rem
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem
 }
 
 .py-32 {
@@ -329,16 +354,6 @@
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem
 }
 
 .font-bold {
@@ -498,6 +513,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:m-2 {
+    margin: 0.5rem
+  }
+
   .lg\:h-screen {
     height: 100vh
   }
@@ -521,14 +540,5 @@ body {
   .lg\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem
-  }
-
-  .lg\:text-center {
-    text-align: center
-  }
-
-  .lg\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem
   }
 }
