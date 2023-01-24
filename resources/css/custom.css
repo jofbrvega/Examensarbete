@@ -1,19 +1,15 @@
  /* CF7 */
  /* FORMS */
-   .wpcf7 p {
-       @apply mt-8;
-   }
-
   .wpcf7-form label {
       @apply p-4 text-lg;
   }
 
   .wpcf7-text {
-      @apply w-full h-12 pl-3 mt-2 text-black border-2 rounded-full;
+      @apply w-full h-12 pl-3 mt-2 text-black border-2;
   }
 
   .wpcf7-textarea {
-      @apply w-full pt-2 pl-3 mt-2 text-black border-2 rounded-full h-44;
+      @apply w-full pt-2 pl-3 text-black border-2 h-44;
   }
 
   ::placeholder {
@@ -25,7 +21,7 @@
   }
 
   .wpcf7-response-output {
-      @apply !border-none bg-pink-300 text-black !py-4 !px-6 rounded-md;
+      @apply !border-none bg-pink-300 text-black !py-4 !px-6;
   }
 
   .wpcf7-not-valid-tip {
@@ -33,9 +29,13 @@
   }
 
   .wpcf7-submit {
-    @apply p-2 border-2 rounded-full;
+    @apply float-right p-2 border-2;
   }
 
-  .wpcf7 span {
-    @apply p-2;
+  .wpcf7-list-item {
+    @apply py-2 m-0;
+  }
+
+  .wpcf7-list-item-label {
+    @apply text-sm;
   }

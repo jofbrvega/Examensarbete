@@ -54,6 +54,10 @@
   order: 1
 }
 
+.float-right {
+  float: right
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem
@@ -310,6 +314,11 @@
 .\!px-6 {
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem
 }
 
 .pl-3 {

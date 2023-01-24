@@ -566,6 +566,10 @@ video {
   order: 1;
 }
 
+.float-right {
+  float: right;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -650,20 +654,12 @@ video {
   width: fit-content;
 }
 
-.w-1\/2 {
-  width: 50%;
+.max-w-screen-xl {
+  max-width: 1280px;
 }
 
 .max-w-screen-2xl {
   max-width: 1536px;
-}
-
-.max-w-screen-md {
-  max-width: 768px;
-}
-
-.max-w-screen-xl {
-  max-width: 1280px;
 }
 
 .flex-grow {
@@ -672,10 +668,6 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-cols-5 {
@@ -706,10 +698,6 @@ video {
   justify-content: space-between;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-10 {
   gap: 2.5rem;
 }
@@ -722,10 +710,6 @@ video {
 
 .rounded-md {
   border-radius: 0.375rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .border-2 {
@@ -785,18 +769,9 @@ video {
   padding: 8rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .py-4 {
@@ -819,9 +794,9 @@ video {
   padding-bottom: 1rem !important;
 }
 
-.\!px-6 {
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pl-3 {
@@ -830,10 +805,6 @@ video {
 
 .pt-2 {
   padding-top: 0.5rem;
-}
-
-.text-left {
-  text-align: left;
 }
 
 .text-center {
@@ -976,10 +947,6 @@ video {
 
 /* FORMS */
 
-.wpcf7 p {
-  margin-top: 2rem;
-}
-
 .wpcf7-form label {
   padding: 1rem;
   font-size: 1.125rem;
@@ -990,7 +957,6 @@ video {
   margin-top: 0.5rem;
   height: 3rem;
   width: 100%;
-  border-radius: 9999px;
   border-width: 2px;
   padding-left: 0.75rem;
   --tw-text-opacity: 1;
@@ -998,10 +964,8 @@ video {
 }
 
 .wpcf7-textarea {
-  margin-top: 0.5rem;
   height: 11rem;
   width: 100%;
-  border-radius: 9999px;
   border-width: 2px;
   padding-top: 0.5rem;
   padding-left: 0.75rem;
@@ -1024,7 +988,6 @@ video {
 }
 
 .wpcf7-response-output {
-  border-radius: 0.375rem;
   border-style: none !important;
   --tw-bg-opacity: 1;
   background-color: rgb(249 168 212 / var(--tw-bg-opacity));
@@ -1044,13 +1007,20 @@ video {
 }
 
 .wpcf7-submit {
-  border-radius: 9999px;
+  float: right;
   border-width: 2px;
   padding: 0.5rem;
 }
 
-.wpcf7 span {
-  padding: 0.5rem;
+.wpcf7-list-item {
+  margin: 0px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.wpcf7-list-item-label {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1084,13 +1054,5 @@ video {
 @media (min-width: 1024px) {
   .lg\:h-screen {
     height: 100vh;
-  }
-
-  .lg\:w-1\/2 {
-    width: 50%;
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
   }
 }
