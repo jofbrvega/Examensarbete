@@ -8,8 +8,6 @@ if ($font_family == "wtmg") : ?>
         * {
             font-family: 'Times New Roman', Times, serif;
         }
-
-
         h1 {
             font-weight: bold;
             font-size: xx-large;
@@ -41,7 +39,7 @@ if ($font_family == "wtmg") : ?>
             font-size: large;
             padding-bottom: 1rem;
         }
-
+    
         p,
         div,
         {
