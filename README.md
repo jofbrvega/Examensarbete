@@ -32,6 +32,6 @@ These blocks are pre-made, you may add your own in [hero-directory](./template-p
 ## 3 chosen obligated moments that are added in this project
 - Lazyloading images, that are written in image-tag.
 - Leaflet, API map. 
-- Routing och snygga url:er, med hjälp av PHP filerna och ACF-blocks har jag kopplat all routing till index.php genom 
+- Routing and nice url:er, with the help of PHP-files and ACF-blocks - routing through index-php: 
     <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
 
