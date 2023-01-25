@@ -144,3 +144,44 @@ function my_acf_blocks_init() {
         );
     }
 };
+
+function whitelist_blocks($allowed_block_types, $post)
+{
+    if ($post->post_type == 'post') :
+        return array(
+            'core/heading',
+            'core/paragraph',
+            'core/image',
+            'core/separator',
+            'core/media-text',
+            'core/spacer',
+            'core/shortcode',
+            'acf/video',
+            'acf/form'
+        );
+    else :
+        return array(
+            'core/spacer',
+            'core/media-text',
+            'core/image',
+            'acf/employees',
+            'acf/form',
+            'acf/hero-50',
+            'acf/hero-slider',
+            'acf/hero',
+            'acf/image-gallery-slider',
+            'acf/image-text',
+            'acf/maps',
+            'acf/premises',
+        );
+    endif;
+
+    switch ($post->post_type) {
+        default:
+            return $allowed_block_types;
+    }
+}
+add_filter('allowed_block_types', 'whitelist_blocks', 10, 2);
+
+
+
