@@ -1,6 +1,6 @@
 # Boilerplate
 
-Components library for Boilerplate. Requirements for using the components are Tailwind and Advanced Custom Fields. 
+Components library for Boilerplate - Wordpress. Requirements for using the components are Tailwind and Advanced Custom Fields. 
 
 ## Content Sections
 * [Navbar](./template-parts/global/global-header.php)
@@ -13,10 +13,9 @@ Components library for Boilerplate. Requirements for using the components are Ta
 
 <!-- [I'm a relative reference to a repository file](../blob/master/LICENSE) -->
 
-## Scripts 
-Watch and sync for file changes
-**npm run watch-sync**
-
+## Scripts & Information
+* Watch and sync for file changes **npm run watch-sync**
+* PHP version - 8.1.12 
 
 ## Instructions for Boilerplate
 ### Header
@@ -34,4 +33,3 @@ These blocks are pre-made, you may add your own in [hero-directory](./template-p
 - Leaflet, API map. 
 - Routing and nice url:er, with the help of PHP-files and ACF-blocks - routing through index-php: 
     <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
-
