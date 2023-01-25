@@ -15,7 +15,6 @@ Components library for Boilerplate. Requirements for using the components are Ta
 
 ## Scripts 
 **npm run watch-sync**
-
 Watch and sync for file changes
 
 ## Instructions for Boilerplate
