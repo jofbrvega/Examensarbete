@@ -14,8 +14,9 @@ Components library for Boilerplate. Requirements for using the components are Ta
 <!-- [I'm a relative reference to a repository file](../blob/master/LICENSE) -->
 
 ## Scripts 
-**npm run watch-sync**
 Watch and sync for file changes
+**npm run watch-sync**
+
 
 ## Instructions for Boilerplate
 ### Header
@@ -28,7 +29,9 @@ These blocks are pre-made, you may add your own in [hero-directory](./template-p
 
 <!-- Beroenden, krav, begränsningar och mål plattformar (till ex. lägsta webbläsarversioner, PHP version, webbserver krav etc. -->
 
-Obligated moments that are added in this project
+## 3 chosen obligated moments that are added in this project
 - Lazyloading images, that are written in image-tag.
 - Leaflet, API map. 
-- 
+- Routing och snygga url:er, med hjälp av PHP filerna och ACF-blocks har jag kopplat all routing till index.php genom 
+    <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+
