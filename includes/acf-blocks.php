@@ -120,7 +120,7 @@ function my_acf_blocks_init() {
                 'name'              => 'employees',
                 'title'             => __('Employees'),
                 'description'       => __('Employees - block'),
-                'render_template'   => 'template-parts/blocks/employees.php',
+                'render_template'   => 'template-parts/blocks/employees/employees.php',
                 'render_callback' => 'block_render',
                 'category'          => 'blocks',
                 'icon'              => 'admin-comments',
