@@ -16,6 +16,7 @@ Components library for Boilerplate - Wordpress. Requirements for using the compo
 ## Scripts & Information
 * Watch and sync for file changes **npm run watch-sync**
 * PHP version - 8.1.12 
+* Use Laravel Valet to run site locally [https://laravel.com/docs/9.x/valet]
 
 ## Instructions for Boilerplate
 ### Header
@@ -24,9 +25,6 @@ To change style and CSS - use [global-header](./template-parts/global/global-hea
 To change style and CSS - use [custom.css](./resources/css/custom.css) and modify it to your own.
 ### Hero, Image, Maps 
 These blocks are pre-made, you may add your own in [hero-directory](./template-parts/blocks/hero/) or choose between these blocks in Wordpress page. 
-
-
-<!-- Beroenden, krav, begränsningar och mål plattformar (till ex. lägsta webbläsarversioner, PHP version, webbserver krav etc. -->
 
 ## 3 chosen obligated moments that are added in this project
 - Lazyloading images, that are written in image-tag.
