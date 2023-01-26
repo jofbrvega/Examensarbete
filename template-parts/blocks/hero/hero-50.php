@@ -4,14 +4,16 @@ $hero_50_text = get_field('hero_50_text');
 $hero_50_image = get_field('hero_50_image');
 ?>
 
-<section class="w-full px-4 py-4 bg-white border-b border-gray-500 border-none lg:py-10 max-w-screen-2xl dark:bg-gray-900">
-    <div class="grid grid-cols-2">
-        <div>
-            <h1><?php echo esc_attr($hero_50_heading); ?></h1>
-            <h3><?php echo esc_attr($hero_50_text); ?></h3>
+<section class="w-full max-w-screen-xl px-4 py-4 mx-auto border-b border-gray-500 lg:py-10">
+    <div class="grid grid-span-2 lg:grid-cols-2 lg:gap-10">
+        <div class="flex flex-col justify-center order-0">
+            <?php if ($hero_50_image) : ?>
+            <img class="loading=lazy" src="<?php echo $hero_50_image['url']; ?>" alt="<?php $hero_50_image['alt']; ?>">
         </div>
-        <div>
-            <img class="w-10 h-10 loading=lazy" src="<?php echo $hero_50_image['url']; ?>" alt="<?php $hero_50_image['alt']; ?>">
+        <?php endif; ?>
+        <div class="flex flex-col justify-center order-1 p-4">
+            <h1 class="py-4"><?php echo esc_attr($hero_50_heading); ?></h1>
+            <h3 class="block"><?php echo esc_attr($hero_50_text); ?></h3>
         </div>
     </div>
 </section>
